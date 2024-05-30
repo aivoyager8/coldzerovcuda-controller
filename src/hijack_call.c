@@ -860,7 +860,7 @@ CUresult cuMemAlloc(CUdeviceptr *dptr, size_t bytesize) {
     }
   }
 
-  ret = CUDA_ENTRY_CALL(cuda_library_entry, cuMemAlloc, dptr, bytesize);
+  ret = CUDA_ENTRY_CALL(cuda_library_entry, cuMemAlloc_v2, dptr, bytesize);
 DONE:
   return ret;
 }
