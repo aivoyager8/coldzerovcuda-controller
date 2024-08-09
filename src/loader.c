@@ -1352,8 +1352,10 @@ static int get_path_by_cgroup(const char *pid_cgroup) {
   LOGGER(4, "pid file: %s", pid_path);
   ret = 0;
 
-  LOGGER(4, "register to remote: cont id: %s", container_id);
-  register_to_remote_with_data("", "", container_id, pid_cgroup);
+  //Remove beign ChenHG
+  //LOGGER(4, "register to remote: cont id: %s", container_id);
+  //register_to_remote_with_data("", "", container_id, pid_cgroup);
+  //Remove end ChenHG
 DONE:
   return ret;
 }
