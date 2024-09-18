@@ -5,7 +5,7 @@ set -o nounset
 set -o xtrace
 
 ROOT=$(cd $(dirname ${BASH_SOURCE[0]}) && pwd -P)
-IMAGE_FILE=${IMAGE_FILE:-"registry.tydic.com/dcloud/vcuda:12.2.0"}
+IMAGE_FILE=${IMAGE_FILE:-"registry-dev.xcloud.lenovo.com:18083/earth_system/vcuda:12.2.0"}
 
 function cleanup() {
     rm -rf ${ROOT}/cuda-control.tar
